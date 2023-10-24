@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "metacritic-bot"
+version = "0.1.0"
+description = "A bot to fetch information about media on Metacritic"
+authors = ["Erick Mendonça <erickmendonca@hey.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+poetry = "^1.6.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
