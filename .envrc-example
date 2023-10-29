@@ -1,0 +1,3 @@
+# replace the value of TELEGRAM_TOKEN with your own token
+# save this file as .envrc
+export TELEGRAM_TOKEN=""
