@@ -1,14 +1,14 @@
-from src.client.metacritic import MetacriticClient
+from metacriticbot.client.metacritic import MetacriticClient
 
 import unittest
 from unittest.mock import patch, Mock
-from src.client.metacritic import MetacriticClient, Game
+from metacriticbot.client.metacritic import MetacriticClient, Game
 
 class TestMetacriticClient(unittest.TestCase):
     def setUp(self):
         self.client = MetacriticClient()
 
-    @patch('src.client.metacritic.requests.request')
+    @patch('metacriticbot.client.metacritic.requests.request')
     def test_search_game(self, mock_request):
         mock_game = {
             "title": "The Legend of Zelda: Breath of the Wild",
