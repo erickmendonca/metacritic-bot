@@ -1,10 +1,14 @@
 [tool.poetry]
-name = "metacritic-bot"
+name = "metacriticbot"
 version = "0.1.0"
 description = "A bot to fetch information about media on Metacritic"
 authors = ["Erick Mendonça <erickmendonca@hey.com>"]
 license = "MIT"
 readme = "README.md"
+packages = [
+    { include = "metacriticbot", from = "src" },
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.11"
